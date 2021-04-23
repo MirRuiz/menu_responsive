@@ -1,0 +1,36 @@
+body{
+    margin:0 px;
+    padding: 0 px;
+    background-color: azure;
+}
+
+.container{
+    display: grid;
+    height: 8vh;
+    background-color: rgb(71, 131, 133);
+    color:white;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:auto;
+    justify-items: stretch;
+   
+}
+.item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover{
+    background-color: rgb(13, 57, 58);
+}
+@media screen and (max-width:500px){
+    .container{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+        height: 25vh;
+    }
+    h2{
+        display:flex;
+        justify-content: center;
+    }
+}
